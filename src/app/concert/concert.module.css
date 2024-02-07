@@ -1,0 +1,227 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background: var(--app-background-color);
+
+}
+
+
+.savedConcertC {
+    width: 100%;
+    height: calc(50% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+    .scrollable {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        height: 100%;
+    }
+
+    .savedConcertsContainer {
+        width: fit-content;
+        display: flex;
+        gap: 80px;
+        transform: translateX(88px);
+        padding: 0 50px 0 0;
+    }
+
+    .savedConcertsW {
+        position: relative;
+        width: 338px;
+        height: 287px;
+        background: grey;
+        border-radius: 36px;
+        overflow: hidden;
+    }
+
+    .savedConcertsC {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .backgroundImage {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: 1;
+    }
+
+    .backgroundImageMask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.5;
+        z-index: 2;
+    }
+
+
+
+    .title {
+        color: var(--text-color);
+        font-size: x-large;
+        padding: 0 55px;
+    }
+
+    .artistName {
+        color: var(--text-color);
+        font-size: xxx-large;
+        font-weight: normal;
+        text-transform: capitalize;
+        z-index: 3;
+    }
+
+.concertsC {
+    height: calc(50%);
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+    gap: 40px;
+}
+
+    .concertsContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px;
+        padding: 0 88px;
+
+    }
+
+
+    .concertScrollable {
+        overflow-y: scroll;
+    }
+
+
+    .concertW {
+        width: 338px;
+        height: 122px;
+
+    }
+
+    .concertC {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 50px;
+    }
+
+    .concertLeftSide {
+        width: calc(80% - 25px);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .concertLeftSideTitle {
+        color: var(--text-color);
+    }
+
+
+    .concertLeftSideP {
+        color: var(--text-color);
+    }
+
+    .concertRightSide {
+        width: calc(40% - 25px);
+        height: 100%;
+        overflow: hidden;
+
+    }
+
+    .concertImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+
+
+@media screen and (max-width: 425px) {
+    .wrapper {
+    }
+
+    .title {
+        font-size: large;
+        padding: 0 20px;
+    }
+
+    .savedConcertsContainer {
+        width: fit-content;
+        display: flex;
+        gap: 40px;
+        transform: translateX(35px);
+    }
+    .savedConcertC {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .savedConcertsW {
+        position: relative;
+        width: 80vw;
+        height: calc(90vw - 50px);
+        background: grey;
+        border-radius: 36px;
+        overflow: hidden;
+    }
+
+
+
+
+    .concertsC {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction:column ;
+        gap: 40px;
+    }
+
+
+    .concertsContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px;
+        justify-content: center;
+        padding: 0 10px;
+        transform: none;
+    }
+
+    .concertW {
+        width: 90%;
+        height: 122px;
+
+    }
+
+    .concertScrollable {
+        overflow-y: scroll;
+    }
+
+}
