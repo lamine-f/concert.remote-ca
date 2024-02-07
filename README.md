@@ -1,5 +1,3 @@
-![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/c2f0d28e-932d-40ec-9a5d-6ba668dab508)This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
@@ -9,7 +7,6 @@ npm run dev
 ```
 
 
-Conf:
 
 # README - Projet Concert
 
