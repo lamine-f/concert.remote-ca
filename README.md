@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/c2f0d28e-932d-40ec-9a5d-6ba668dab508)This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
@@ -24,6 +24,15 @@ Bienvenue dans le README du projet X! Ce fichier contient des informations essen
 
 2. Spécification des couleurs envisagées pour le site web.
 3. Inclusion des wireframes de nos interfaces graphiques.
+
+    Page des concerts
+   ![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/bf5a0ab1-fd3d-4a86-be5d-df4a4d0898e1)
+
+
+    Page d'un concert
+     ![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/e61079bd-807a-4c6a-ad67-6338114f72cc)
+
+      ![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/59ff057b-c5e5-42dd-9304-f8147e732466)
 
 
 ## Fonctionnalités
