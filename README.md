@@ -29,7 +29,9 @@ Bienvenue dans le README du projet X! Ce fichier contient des informations essen
     Page d'un concert
      ![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/e61079bd-807a-4c6a-ad67-6338114f72cc)
 
-      ![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/59ff057b-c5e5-42dd-9304-f8147e732466)
+   ![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/831dc14e-e4b4-4749-8643-cfc3fbc1aa35)
+
+
 
 
 ## Fonctionnalités
