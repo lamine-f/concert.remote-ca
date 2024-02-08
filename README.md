@@ -1,44 +1,72 @@
-README - Projet Concert
-Bienvenue dans le README du projet Concert! Ce fichier contient des informations essentielles pour comprendre et développer le projet.
+# Projet de Site de Concert avec Next.js
 
-Getting Started
-Pour démarrer le serveur de développement, exécutez la commande suivante :
+## Introduction
 
-bash
-Copy code
-npm run dev
-Création du Projet
-Le projet Concert a été créé avec Next.js. Voici une capture d'écran de la page d'accueil initiale :
+Ce projet a été réalisé avec Next.js, un framework React populaire pour le développement web. L'objectif était de créer un site dédié à la gestion des concerts, offrant aux utilisateurs une expérience interactive et dynamique.
 
-![Page d'accueil](https://github.com/lamine-f/concert.remote-ca/assets/133556400/645188ed-5a6e-4499-b71a-39137d2fe7a6 | width=300)
+## Wireframes
 
-Recherche d'Information et Design
-Couleurs du Projet
-Les couleurs envisagées pour le site web sont spécifiées comme suit : [Inclure les couleurs et leurs codes hexadécimaux]
+### Page d'Accueil
 
-Wireframes
-Nous avons élaboré des wireframes pour nos interfaces graphiques. Voici quelques exemples :
+![Page d'Accueil](url_image_accueil)
 
-Desktop
-Page des concerts
-![Page des concerts](https://github.com/lamine-f/concert.remote-ca/assets/133556400/bf5a0ab1-fd3d-4a86-be5d-df4a4d0898e1 | width=300)
+La page d'accueil présente une liste de concerts à venir, avec des cartes affichant les détails essentiels tels que l'artiste, la date, et le lieu.
 
-Page d'un concert
-![Page d'un concert](https://github.com/lamine-f/concert.remote-ca/assets/133556400/e61079bd-807a-4c6a-ad67-6338114f72cc | width=300)
+### Page d'Artiste
 
-Mobile
-Page des concerts
-![Page des concerts](https://github.com/lamine-f/concert.remote-ca/assets/133556400/84fa8227-5299-4e01-a925-c23226adeb14 | width=200)
+![Page d'Artiste](url_image_artiste)
 
-Page d'un concert
-![Page d'un concert](https://github.com/lamine-f/concert.remote-ca/assets/133556400/b3bf2989-fc67-4936-b6f4-64aacafb39a2 | width=200)
+Chaque artiste dispose d'une page dédiée avec des informations détaillées, une biographie, et une liste de ses prochains concerts.
 
-Fonctionnalités
-Page d'accueil
-[Description détaillée des fonctionnalités prévues pour la page d'accueil.]
+### Recherche de Concerts
 
-Pages d'affichage des concerts
-Il s'agit de la page qui montre les concerts des artistes (rappeurs).
+![Recherche de Concerts](url_image_recherche)
 
-Pages d'un Concert
-Il s'agit d'un sous-menu de la page d'affichage des concerts, où l'on trouve les détails d'un concert, de l'artiste concerné...
+Les utilisateurs peuvent utiliser la fonction de recherche pour trouver rapidement des concerts spécifiques, des artistes ou des lieux.
+
+### Authentification des Utilisateurs
+
+![Authentification](url_image_auth)
+
+Les utilisateurs peuvent créer un compte, se connecter, et suivre leurs artistes préférés pour recevoir des notifications sur les prochains concerts.
+
+## Fonctionnalités
+
+### 1. Liste des Concerts
+
+La page d'accueil du site affiche une liste de concerts à venir, triés par date. Chaque concert est représenté par une carte contenant des détails tels que le nom de l'artiste, la date, et le lieu.
+
+### 2. Page d'Artiste
+
+Chaque artiste dispose d'une page dédiée avec des informations détaillées, y compris une biographie, une liste de ses prochains concerts, et des liens vers ses réseaux sociaux.
+
+### 3. Recherche de Concerts
+
+Les utilisateurs peuvent utiliser la fonction de recherche pour trouver rapidement des concerts spécifiques, des artistes ou des lieux.
+
+### 4. Authentification des Utilisateurs
+
+Une fonction d'authentification permet aux utilisateurs de créer un compte, de se connecter, et de suivre leurs artistes préférés, recevant ainsi des notifications sur les prochains concerts.
+
+## Technologie Utilisée
+
+Ce projet repose sur les technologies suivantes :
+
+- **Next.js**: Framework React pour le rendu côté serveur et le développement d'applications web.
+
+- **React**: Bibliothèque JavaScript pour la construction d'interfaces utilisateur interactives.
+
+- **Tailwind CSS**: Cadre CSS utilitaire pour un stylage rapide et efficace.
+
+- **MongoDB**: Base de données NoSQL pour le stockage des informations sur les concerts, les artistes et les utilisateurs.
+
+- **Firebase**: Pour l'authentification des utilisateurs et la gestion des notifications.
+
+## Installation
+
+Pour exécuter localement le projet, suivez ces étapes :
+
+1. Clonez ce dépôt.
+
+   ```bash
+   git clone https://github.com/votre-utilisateur/mon-projet-concert.git
