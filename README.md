@@ -48,6 +48,7 @@ Bienvenue dans le README du projet X! Ce fichier contient des informations essen
 
 - **Page d'accueil:** [Description détaillée des fonctionnalités prévues pour la page d'accueil.]
 
-- **Layout Réutilisable:** [Description des composants inclus dans le layout réutilisable.]
-
-- **Pages d'évènement:** [Description des fonctionnalités des deux pages d'évènement.]
+- **Pages d'affichage des concerts:** [Il s'agit de la page qui montre les concerts des artistes (rappeurs).]
+- 
+- **Pages d'un:**
+   Il s'agit d'un sous menu de la page d'affichage des concerts, on y trouve les détails d'un concert, de l'artiste concerné...
