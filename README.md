@@ -16,7 +16,7 @@ Bienvenue dans le README du projet X! Ce fichier contient des informations essen
 
 1. Création du projet de base avec Next.js.
 
-   <img src="https://github.com/lamine-f/concert.remote-ca/assets/133556400/645188ed-5a6e-4499-b71a-39137d2fe7a6" width="300" height="200">
+   <img src="https://github.com/lamine-f/concert.remote-ca/assets/133556400/645188ed-5a6e-4499-b71a-39137d2fe7a6" style="object-fit: cover;" width="300" height="200">
 
 
 ![Capture d’écran du 2024-02-07 17-27-55](https://github.com/lamine-f/concert.remote-ca/assets/133556400/645188ed-5a6e-4499-b71a-39137d2fe7a6)
