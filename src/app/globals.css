@@ -58,14 +58,18 @@ footer {
 :root {
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
-
+    --secondary-button-color: #353535;
 
     --app-background-color: black;
     --nav-background-color: #382A2A;
 
 
     --text-color: white;
-
+    --input-text-color: white;
     --icon-color: white;
 
 }
+
+
+
+/*Css animations --------------------------------*/

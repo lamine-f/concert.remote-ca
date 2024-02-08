@@ -4,9 +4,10 @@ import React, {useEffect, useState} from "react";
 import Link from "next/link";
 export default function NavBar () {
 
-  const [isMobile, setIsMobile] = useState<boolean>(window!.innerWidth <= 425);
+  const [isMobile, setIsMobile] = useState<boolean>(true);
 
   useEffect(() => {
+    setIsMobile(window.innerWidth <= 425);
     window.addEventListener('resize', () => {
         setIsMobile(window.innerWidth <= 425);
     })
@@ -74,11 +75,11 @@ export const BurgerMenu = () => {
         <div className={styles.menu}>
 
           <div className={styles.menuItemContainer} >
-            <Link className={styles.menuItem} onClick={() => handleToggle()} href={"home"}>Acceuil</Link>
+            <Link className={styles.menuItem} onClick={() => handleToggle()} href={"/"}>Acceuil</Link>
           </div>
 
           <div className={styles.menuItemContainer} >
-            <Link className={styles.menuItem} onClick={() => handleToggle()} href={"concert"}>Concert</Link>
+            <Link className={styles.menuItem} onClick={() => handleToggle()} href={"concerts-card"}>Concert</Link>
           </div>
 
         </div>

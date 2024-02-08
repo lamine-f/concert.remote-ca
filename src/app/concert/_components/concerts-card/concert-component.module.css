@@ -1,0 +1,130 @@
+/*------------------------------Concerts*/
+.concertsC {
+    height: calc(50%);
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+    gap: 40px;
+}
+
+
+.title {
+    color: var(--text-color);
+    font-size: x-large;
+    padding: 0 55px;
+}
+
+
+.concertsContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 0 88px;
+
+}
+
+
+.concertScrollable {
+    overflow-y: scroll;
+}
+
+
+/*------------------------------Concert*/
+.concertW {
+    width: 338px;
+    height: 122px;
+
+}
+
+.concertW:hover {
+    animation: active 0.4s ease-in-out forwards;
+    cursor: pointer;
+}
+
+@keyframes active {
+    0% {
+        transform: scale(1);
+        z-index: 5;
+    }
+
+    100% {
+        z-index: 5;
+        transform: scale(1.05);
+    }
+}
+.concertC {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+.concertLeftSide {
+    width: calc(80% - 25px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.concertLeftSideTitle {
+    color: var(--text-color);
+}
+
+
+.concertLeftSideP {
+    color: var(--text-color);
+}
+
+.concertRightSide {
+    width: calc(40% - 25px);
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.concertImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+    .concertsC {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction:column ;
+        gap: 40px;
+    }
+
+
+    .concertsContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px;
+        justify-content: center;
+        padding: 0 10px;
+        transform: none;
+    }
+
+    .concertW {
+        width: 90%;
+        height: 122px;
+
+    }
+
+    .concertScrollable {
+        overflow-y: scroll;
+    }
+
+}

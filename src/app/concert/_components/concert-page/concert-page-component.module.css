@@ -1,0 +1,110 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    /*backdrop-filter: blur(12px);*/
+    background: var(--app-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: display 1s forwards;
+}
+
+.container {
+    width: 90%;
+    height: 70%;
+    background: grey;
+    position: relative;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+
+.firstSection {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+
+}
+
+.secondSection {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+
+.artistName {
+    position: relative;
+    z-index: 7;
+    color: var(--text-color);
+    font-size: xxx-large;
+    font-weight: normal;
+    text-transform: capitalize;
+    padding: 50px 0 0 50px;
+}
+
+.concertCardContainer {
+    position: absolute;
+    bottom: 80px;
+    z-index: 7;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.backgoundMask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 7;
+    background: linear-gradient(to top, black, #ffffff00, black);
+}
+
+.backgoundMask2 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 7;
+    background: #000000b8;
+
+}
+
+.image {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    position: absolute;
+    z-index: 6;
+}
+
+
+
+
+
+
+
+
+@keyframes display {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

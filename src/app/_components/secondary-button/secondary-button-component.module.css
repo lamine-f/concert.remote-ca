@@ -1,0 +1,9 @@
+.button {
+    border: none;
+    outline: none;
+    width: 152px;
+    height: 57px;
+    border-radius: 77px;
+    background: var(--secondary-button-color);
+    color: var(--text-color);
+}

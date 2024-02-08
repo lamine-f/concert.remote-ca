@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import styles from "./layout.module.css";
 import NavBar, {BurgerMenu} from "@/app/_components/nav-bar/nav-bar.component";
+import SearchBar from "@/app/_components/search-bar/search-bar.component";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ function Header () {
   return (
     <header className={styles.headerWrapper} >
       <div className={styles.headerContainer} >
+        <SearchBar/>
         <NavBar/>
       </div>
     </header>
@@ -44,6 +46,7 @@ export default function RootLayout({
           <div className={styles.bodyContainer} >
             <Header/>
             <Main
+
               children={children}
             />
           </div>
