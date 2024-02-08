@@ -8,7 +8,7 @@ Ce projet a été réalisé avec Next.js, un framework React populaire pour le d
 
 ### Page d'Accueil
 
-![Page d'Accueil](url_image_accueil)
+![Page des concerts](https://github.com/lamine-f/concert.remote-ca/assets/133556400/bf5a0ab1-fd3d-4a86-be5d-df4a4d0898e1 | width=300)
 
 La page d'accueil présente une liste de concerts à venir, avec des cartes affichant les détails essentiels tels que l'artiste, la date, et le lieu.
 
