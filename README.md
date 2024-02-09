@@ -27,7 +27,7 @@ Chaque artiste dispose d'une page dédiée avec des informations détaillées, u
 
 ### Recherche de Concerts
 
-![Recherche de Concerts](url_image_recherche)
+[EN COURS]
 
 Les utilisateurs peuvent utiliser la fonction de recherche pour trouver rapidement des concerts spécifiques ou des artistes.
 
