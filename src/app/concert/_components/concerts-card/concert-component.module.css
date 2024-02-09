@@ -94,9 +94,24 @@
 }
 
 
+@media screen and (max-width: 500px) {
+
+    .title {
+        color: var(--text-color);
+        font-size: large;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 932px) {
+
+    /*.title {*/
+    /*    color: var(--text-color);*/
+    /*    font-size: x-large;*/
+    /*    padding: 0 20px;*/
+    /*}*/
 
 
-@media screen and (max-width: 425px) {
     .concertsC {
         height: 100%;
         width: 100%;

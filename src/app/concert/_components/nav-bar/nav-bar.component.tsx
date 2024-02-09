@@ -7,9 +7,9 @@ export default function NavBar () {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
-    setIsMobile(window.innerWidth <= 425);
+    setIsMobile(window.innerWidth <= 768);
     window.addEventListener('resize', () => {
-        setIsMobile(window.innerWidth <= 425);
+        setIsMobile(window.innerWidth <= 768);
     })
   }, []);
 
