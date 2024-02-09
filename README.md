@@ -8,6 +8,11 @@ Ce projet a été réalisé avec Next.js, un framework React populaire pour le d
 
 ### Page d'Accueil
 
+![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/77f78156-923b-43b2-8aec-78d1963e89ed)
+
+
+### Page des concerts
+
 ![Page d'acceuil](https://github.com/lamine-f/concert.remote-ca/assets/133556400/cbf44274-8849-4920-a578-16aa2bd3859e)
 
 
