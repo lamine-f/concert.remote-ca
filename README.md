@@ -14,13 +14,10 @@ Ce projet a été réalisé avec Next.js, un framework React populaire pour le d
 #### Page des concerts
 
 <div>
-   <img src="https://github.com/lamine-f/concert.remote-ca/assets/133556400/cbf44274-8849-4920-a578-16aa2bd3859e" />
-   <img src="https://github.com/lamine-f/concert.remote-ca/assets/133556400/d8bbc8de-0d9f-4b3c-b614-5b3ee2dd77ec" />
+   <img src="https://github.com/lamine-f/concert.remote-ca/assets/133556400/cbf44274-8849-4920-a578-16aa2bd3859e" style="width: 80px; height: 80px;" />
+   <img src="https://github.com/lamine-f/concert.remote-ca/assets/133556400/d8bbc8de-0d9f-4b3c-b614-5b3ee2dd77ec" style="width: 80px; height: 80px;"/>
 </div>
 
-![Page d'acceuil](https://github.com/lamine-f/concert.remote-ca/assets/133556400/cbf44274-8849-4920-a578-16aa2bd3859e)
-
-![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/d8bbc8de-0d9f-4b3c-b614-5b3ee2dd77ec)
 
 
 
