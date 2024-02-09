@@ -36,6 +36,30 @@ Les utilisateurs peuvent utiliser la fonction de recherche pour trouver rapideme
 
 ### Mobile
 
+#### Page d'Accueil
+
+
+
+#### Page des concerts
+
+![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/d8bbc8de-0d9f-4b3c-b614-5b3ee2dd77ec)
+
+
+
+La page d'accueil présente une liste de concerts à venir, avec des cartes affichant les détails essentiels tels que l'artiste, la date, et le lieu.
+
+#### Page d'Artiste
+
+
+
+Chaque artiste dispose d'une page dédiée avec des informations détaillées, une biographie, et une liste de ses prochains concerts.
+
+#### Recherche de Concerts
+
+[EN COURS]
+
+Les utilisateurs peuvent utiliser la fonction de recherche pour trouver rapidement des concerts spécifiques ou des artistes.
+
 
 ## Technologie Utilisée
 
