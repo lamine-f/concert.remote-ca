@@ -13,7 +13,7 @@ Ce projet a été réalisé avec Next.js, un framework React populaire pour le d
 
 #### Page des concerts
 
-<table  >
+<table style="width: 100%" >
    <tr>
       <td>
          <img src="https://github.com/lamine-f/concert.remote-ca/assets/133556400/cbf44274-8849-4920-a578-16aa2bd3859e" style="width: 50%; height: 80px;" />
