@@ -50,6 +50,8 @@ Pour exécuter localement le projet, suivez ces étapes :
    git clone https://github.com/lamine-f/concert.remote-ca.git
    git checkout dev
    ```
+2. Installez les dépendances puis lancer le serveur en mode développement.
+   
    ```bash
    npm install
    npm run dev
