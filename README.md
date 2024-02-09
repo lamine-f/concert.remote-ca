@@ -15,7 +15,7 @@ La page d'accueil présente une liste de concerts à venir, avec des cartes affi
 
 ### Page d'Artiste
 
-![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/fe26e521-3f4e-4b54-b717-6882a2409e85)
+![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/fd6d904e-7c4f-4349-9169-eb5a8319b2fb)
 
 
 Chaque artiste dispose d'une page dédiée avec des informations détaillées, une biographie, et une liste de ses prochains concerts.
