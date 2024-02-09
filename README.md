@@ -1,53 +1,52 @@
-## Getting Started
+# Projet de Site de Concert avec Next.js
 
-First, run the development server:
+## Introduction
 
-```bash
-npm run dev
-```
+Ce projet a été réalisé avec Next.js, un framework React populaire pour le développement web. L'objectif était de créer un site dédié à la présentation de concerts, offrant aux utilisateurs une expérience interactive et dynamique.
 
+## Wireframes
 
+### Page d'Accueil
 
-# README - Projet Concert
-
-Bienvenue dans le README du projet X! Ce fichier contient des informations essentielles pour comprendre et développer le projet. 
-
-### Création du projet, recherche d’information et design
-
-1. Création du projet de base avec Next.js.
-
-![Capture d’écran du 2024-02-07 17-27-55](https://github.com/lamine-f/concert.remote-ca/assets/133556400/645188ed-5a6e-4499-b71a-39137d2fe7a6)
+![Page d'acceuil](https://github.com/lamine-f/concert.remote-ca/assets/133556400/cbf44274-8849-4920-a578-16aa2bd3859e)
 
 
-2. Spécification des couleurs envisagées pour le site web.
-3. Inclusion des wireframes de nos interfaces graphiques.
+La page d'accueil présente une liste de concerts à venir, avec des cartes affichant les détails essentiels tels que l'artiste, la date, et le lieu.
 
-   #### Desktop
-    Page des concerts
-   ![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/bf5a0ab1-fd3d-4a86-be5d-df4a4d0898e1)
+### Page d'Artiste
 
-
-    Page d'un concert
-     ![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/e61079bd-807a-4c6a-ad67-6338114f72cc)
-
-     ![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/831dc14e-e4b4-4749-8643-cfc3fbc1aa35)
-
-    #### Mobile
-    Page des concerts
-   
-    ![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/84fa8227-5299-4e01-a925-c23226adeb14)
-
-    Page de concert
-     ![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/b3bf2989-fc67-4936-b6f4-64aacafb39a2)
-     ![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/c7a393b1-2d5c-44d7-9e29-64e9ba2e3472)
+![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/fd6d904e-7c4f-4349-9169-eb5a8319b2fb)
 
 
+Chaque artiste dispose d'une page dédiée avec des informations détaillées, une biographie, et une liste de ses prochains concerts.
+
+### Recherche de Concerts
+
+![Recherche de Concerts](url_image_recherche)
+
+Les utilisateurs peuvent utiliser la fonction de recherche pour trouver rapidement des concerts spécifiques ou des artistes.
 
 
-## Fonctionnalités
+## Technologie Utilisée
 
-- **Page d'accueil:** [Description détaillée des fonctionnalités prévues pour la page d'accueil.]
+Ce projet repose sur les technologies suivantes :
 
-- **Layout Réutilisable:** [Description des composants inclus dans le layout réutilisable.]
+- **Next.js**: Framework React pour le rendu côté serveur et le développement d'applications web.
 
-- **Pages d'évènement:** [Description des fonctionnalités des deux pages d'évènement.]
+- **React**: Bibliothèque JavaScript pour la construction d'interfaces utilisateur interactives.
+
+## Installation
+
+Pour exécuter localement le projet, suivez ces étapes :
+
+1. Clonez ce dépôt.
+
+   ```bash
+   git clone https://github.com/lamine-f/concert.remote-ca.git
+   ```
+   ```bash
+   npm i
+   ```
+   ```bash
+   npm run dev
+   ```
