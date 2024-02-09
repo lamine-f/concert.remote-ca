@@ -6,30 +6,35 @@ Ce projet a été réalisé avec Next.js, un framework React populaire pour le d
 
 ## Wireframes
 
-### Page d'Accueil
+### Desktop
+
+#### Page d'Accueil
 
 ![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/77f78156-923b-43b2-8aec-78d1963e89ed)
 
 
-### Page des concerts
+#### Page des concerts
 
 ![Page d'acceuil](https://github.com/lamine-f/concert.remote-ca/assets/133556400/cbf44274-8849-4920-a578-16aa2bd3859e)
 
 
 La page d'accueil présente une liste de concerts à venir, avec des cartes affichant les détails essentiels tels que l'artiste, la date, et le lieu.
 
-### Page d'Artiste
+#### Page d'Artiste
 
 ![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/fd6d904e-7c4f-4349-9169-eb5a8319b2fb)
 
 
 Chaque artiste dispose d'une page dédiée avec des informations détaillées, une biographie, et une liste de ses prochains concerts.
 
-### Recherche de Concerts
+#### Recherche de Concerts
 
 [EN COURS]
 
 Les utilisateurs peuvent utiliser la fonction de recherche pour trouver rapidement des concerts spécifiques ou des artistes.
+
+
+### Mobile
 
 
 ## Technologie Utilisée
