@@ -26,6 +26,7 @@ Chaque artiste dispose d'une page dédiée avec des informations détaillées, u
 
 Les utilisateurs peuvent utiliser la fonction de recherche pour trouver rapidement des concerts spécifiques ou des artistes.
 
+
 ## Technologie Utilisée
 
 Ce projet repose sur les technologies suivantes :
