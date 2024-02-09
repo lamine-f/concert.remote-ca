@@ -24,10 +24,7 @@ Chaque artiste dispose d'une page dédiée avec des informations détaillées, u
 
 ![Recherche de Concerts](url_image_recherche)
 
-Les utilisateurs peuvent utiliser la fonction de recherche pour trouver rapidement des concerts spécifiques, des artistes ou des lieux.
-
-### Authentification des Utilisateurs
-
+Les utilisateurs peuvent utiliser la fonction de recherche pour trouver rapidement des concerts spécifiques ou des artistes.
 
 ## Technologie Utilisée
 
@@ -45,3 +42,9 @@ Pour exécuter localement le projet, suivez ces étapes :
 
    ```bash
    git clone https://github.com/lamine-f/concert.remote-ca.git
+
+   ```bash
+   npm i
+
+   ```bash
+   npm run dev
