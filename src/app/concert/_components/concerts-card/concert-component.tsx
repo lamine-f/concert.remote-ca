@@ -1,6 +1,6 @@
 "use client"
 import React, {CSSProperties, useEffect, useState} from "react";
-import useAxios from "@/app/_hooks/useAxios";
+import useAxios from "@/app/concert/_hooks/useAxios";
 import {rapperInstance} from "@/app/_api/instances";
 import styles from "./concert-component.module.css";
 import Image from "next/image";

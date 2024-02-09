@@ -46,9 +46,6 @@ export default function ConcertPage () {
           <section className={styles.secondSection}>
               <div className={styles.backgoundMask2} />
               <h2 className={styles.artistName} >{rapper?.first_name+" "+rapper?.last_name}</h2>
-
-
-
               <Image className={styles.image} width={400} height={400} src={rapper!.avatar} alt={"cc"}/>
           </section>
 

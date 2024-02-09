@@ -1,0 +1,44 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.wrapper * {
+    position: relative;
+    z-index: 5;
+}
+
+.welcomMessageContainer {
+
+}
+
+.welcomMessage{
+    color: var(--text-color);
+    text-align: center;
+}
+
+.buttonContainer {
+    background: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button {
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}

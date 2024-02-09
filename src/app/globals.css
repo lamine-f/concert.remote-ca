@@ -12,7 +12,7 @@
 
 
 * {
-
+    text-decoration: none;
     color: red;
     margin: 0;
     padding: 0;
@@ -60,7 +60,7 @@ footer {
     --secondary-color: #2ecc71;
     --secondary-button-color: #353535;
 
-    --app-background-color: black;
+    --app-background-color: #070707;
     --nav-background-color: #382A2A;
 
 

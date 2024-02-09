@@ -1,0 +1,29 @@
+.container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    padding: 150px;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    background: url("../../public/home-page-background.jpg");
+}
+
+
+.leftCardContainer, .rightCardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leftCardContainer {
+
+}
+
+.rightCardContainer {
+
+}
+
+.cardsContainer {
+    display: flex;
+}

@@ -4,7 +4,7 @@ import React, {useEffect, useState} from "react";
 import Link from "next/link";
 export default function NavBar () {
 
-  const [isMobile, setIsMobile] = useState<boolean>(true);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
     setIsMobile(window.innerWidth <= 425);
@@ -30,7 +30,7 @@ export default function NavBar () {
               <Button
                 href={"concert"}
                 active={false}
-                children={"Concert"}
+                children={"A propos"}
               />
             </Buttons>
       }
