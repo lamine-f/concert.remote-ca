@@ -48,10 +48,9 @@ Pour exécuter localement le projet, suivez ces étapes :
 
    ```bash
    git clone https://github.com/lamine-f/concert.remote-ca.git
+   git checkout dev
    ```
    ```bash
-   npm i
-   ```
-   ```bash
+   npm install
    npm run dev
    ```
