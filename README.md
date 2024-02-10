@@ -13,26 +13,18 @@ Ce projet a été réalisé avec Next.js, un framework React populaire pour le d
 
 #### Page des concerts
 La page des concert présente une liste de concerts à venir, avec des cartes affichant les détails essentiels tels que l'artiste, la date, et le lieu.
+Chaque concert dispose d'une page dédiée avec des informations détaillées, une biographie de l'artiste, la date du concert, le lieu, des photos de l'artiste...
 
 ![desktop concert page wireframe](https://github.com/lamine-f/concert.remote-ca/assets/133556400/9c972e35-b4c6-4d14-ae30-8ac8c32a2587)
 
 ![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/c1f8b67b-f5eb-42d4-acc7-228166c4ea46)
 
 
-#### Page d'Artiste
-
-![image](https://github.com/lamine-f/concert.remote-ca/assets/133556400/fd6d904e-7c4f-4349-9169-eb5a8319b2fb)
-
-
-Chaque artiste dispose d'une page dédiée avec des informations détaillées, une biographie, et une liste de ses prochains concerts.
-
 #### Recherche de Concerts
 
 [EN COURS]
 
 Les utilisateurs peuvent utiliser la fonction de recherche pour trouver rapidement des concerts spécifiques ou des artistes.
-
-
 
 
 ## Technologie Utilisée
