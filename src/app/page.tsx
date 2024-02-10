@@ -1,10 +1,8 @@
 import styles from "./page.module.css";
-import Image from "next/image";
 
 import cardStyles from "./card.module.css";
 import backgroundCardStyles from "./background-card.module.css";
 
-import backgoundImage from "../../public/home-page-background.jpg"
 import React, {CSSProperties} from "react";
 import Link from "next/link";
 
@@ -47,13 +45,10 @@ function BackgroundCard () {
           <Card style={{transform: "rotate(-59deg)"}} color={"#262626"}>{date[0]}</Card>
           <Card style={{transform: "rotate(-10deg)"}} >{date[1]}</Card>
         </div>
-
-
         <div className={backgroundCardStyles.cardsContainer}>
           <Card style={{transform: "rotate(41deg) translateY(57px)"}} >{date[2]}</Card>
           <Card style={{transform: "rotate(-4deg) translateX(-22px)"}} color={"#262626"}>{date[3]}</Card>
         </div>
-
       </div>
 
       <div className={backgroundCardStyles.rightCardContainer}>
