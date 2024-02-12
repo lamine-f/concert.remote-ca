@@ -7,11 +7,15 @@ import Image from "next/image";
 import SecondaryButton from "@/app/_shared-components/secondary-button/secondary-button-component";
 import {Concert} from "@/app/concert/_components/concerts-cards/concert-component";
 import {Rapper} from "@/app/concert/page";
+import PrimaryButton from "@/app/_shared-components/primary-button/primary-button-component";
+import {checkIfConcertAlreadySaved, saveConcertToLocalStorage} from "@/app/concert/_hooks/useLocalStorage";
+import {useSavedConcertContext} from "@/app/concert/_hooks/useSavedConcert";
 
 export default function ConcertPage () {
 
   const {concert, setConcert, active, toggleDisplayContext} = useDisplayConcert()
   const [currentConcert, setCurrentConcert] = useState<Concert>();
+  const { concerts, saveConcert } = useSavedConcertContext()
 
   const cancel = () => {
     toggleDisplayContext?.();
@@ -34,14 +38,24 @@ export default function ConcertPage () {
           <SecondPage concert={currentConcert}/>
       </div>
 
-      <SecondaryButton
-        action={() => cancel()}
-        children={"Cancel"}
-        style={{
-          position: "absolute",
-          bottom: "50px"
-        }}
-      />
+
+        <div className={styles.buttonsContainer} >
+            <SecondaryButton
+                action={() => cancel()}
+                children={"Cancel"}
+            />
+            {!checkIfConcertAlreadySaved(currentConcert.id) &&
+                <PrimaryButton
+                    action={() => {
+                      saveConcert(currentConcert)
+                      cancel()
+                    } }
+                    children={"Enregistrer"}
+                />
+            }
+
+        </div>
+
     </div>
   )
 }

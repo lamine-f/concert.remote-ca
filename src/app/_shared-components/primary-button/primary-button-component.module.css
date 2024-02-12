@@ -4,8 +4,7 @@
     width: 152px;
     height: 57px;
     border-radius: 77px;
-    background: var(--secondary-button-color);
+    background: var(--primary-button-color);
     color: var(--text-color);
     cursor: pointer;
-
 }

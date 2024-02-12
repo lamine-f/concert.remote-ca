@@ -1,3 +1,8 @@
+.title {
+    color: var(--text-color);
+    font-size: x-large;
+    padding: 0 55px;
+}
 
 .savedConcertC {
     width: 100%;
@@ -60,14 +65,6 @@
     z-index: 2;
 }
 
-
-
-.title {
-    color: var(--text-color);
-    font-size: x-large;
-    padding: 0 55px;
-}
-
 .artistName {
     color: var(--text-color);
     font-size: xxx-large;
@@ -76,6 +73,14 @@
     z-index: 3;
 }
 
+.trash {
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+    bottom: 10px;
+    right: 10px;
+
+}
 
 
 @media screen and (max-width: 500px) {

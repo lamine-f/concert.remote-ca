@@ -22,6 +22,15 @@
     scroll-snap-type: y mandatory;
 }
 
+
+.buttonsContainer {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    gap: 20px
+}
+
+
 .firstSection {
     position: relative;
     height: 100%;
