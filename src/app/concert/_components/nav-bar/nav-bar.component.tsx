@@ -19,23 +19,25 @@ export default function NavBar () {
       {
         isMobile ?
           <BurgerMenus children={[
-            <BurgerMenu handleToggle={() => {}} url={"/"} >Acceuil</BurgerMenu>,
-            <BurgerMenu handleToggle={() => {}} url={"a-propos"}>A propos</BurgerMenu>
+            <BurgerMenu key={1} handleToggle={() => {}} url={"/"} >Acceuil</BurgerMenu>,
+            // <BurgerMenu handleToggle={() => {}} url={"a-propos"}>A propos</BurgerMenu>
           ]} />
           :
-            <Buttons
-            >
+          <Buttons
+            children={[
               <Button
+                key={1}
                 active={false}
                 href={"/"}
                 children={"Acceuil"}
-              />
-              <Button
-                href={"concert"}
-                active={false}
-                children={"A propos"}
-              />
-            </Buttons>
+              />,
+              // <Button
+              //   href={"concert"}
+              //   active={false}
+              //   children={"A propos"}
+              // />
+            ]}
+          />
       }
       </div>
     </div>
@@ -43,13 +45,13 @@ export default function NavBar () {
 }
 
 
-function Buttons ({children}:{children: React.ReactNode[]}) {
+function Buttons ({children}:{children: React.ReactNode[] | React.ReactNode}) {
   return (
     <>{children}</>
   )
 }
 
-function Button ({active, children, href}:{
+function Button ({children, href}:{
   active: boolean,
   children: string | React.ReactNode,
   href: string
@@ -78,7 +80,7 @@ const BurgerMenus = ({children}:{children: React.ReactNode[]}) => {
         <div className={styles.menu}>
 
           <div className={styles.menuItemContainer} >
-            {children.map( (child: any, id) => React.cloneElement(child, {...child, handleToggle}) )}
+            {children.map( (child: any) => React.cloneElement(child, {...child, handleToggle}) )}
           </div>
 
         </div>

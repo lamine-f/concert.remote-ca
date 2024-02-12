@@ -1,10 +1,10 @@
+"use client"
 import styles from "./page.module.css";
-
 import cardStyles from "./card.module.css";
 import backgroundCardStyles from "./background-card.module.css";
-
 import React, {CSSProperties} from "react";
-import Link from "next/link";
+import PrimaryButton from "@/app/_shared-components/primary-button/primary-button-component";
+import {useRouter} from "next/navigation";
 
 
 function Card ({style, color, children}:{
@@ -17,24 +17,19 @@ function Card ({style, color, children}:{
     <div style={{...style, background: color}} className={cardStyles.wrapper} >
       <div style={{background: color}} className={cardStyles.container} >
         <div className={cardStyles.mask} ></div>
-
         <h2 style={{color: color}} className={cardStyles.dateText} >{children}</h2>
       </div>
     </div>
   )
 }
 
+function Cards () {
 
 
-function BackgroundCard () {
 
-  const shuffle = (array: string[]) => {
-    return array.sort(() => Math.random() - 0.5);
-  };
-
-  const date : string[] = shuffle([
+  const date : string[] = [
     "14 Décembre", "14 Avril", "12 Mai", "25 Juillet", "31 Décembre", "30 Février", "13 Mars", "20 Octobre"
-  ])
+  ];
 
   return (
     <div className={backgroundCardStyles.container}>
@@ -68,17 +63,24 @@ function BackgroundCard () {
 }
 
 export default function Home() {
+
+  const nav = useRouter();
+
   return (
     <>
-      <BackgroundCard/>
+      <Cards/>
       <div className={styles.wrapper}>
-
           <div className={styles.welcomMessageContainer}>
             <h1 className={styles.welcomMessage} >Les concerts de vos artistes favoris</h1>
           </div>
 
           <div className={styles.buttonContainer} >
-            <Link href={"concert"} className={styles.button}>Concerts</Link>
+            <PrimaryButton
+              style={{background: "white", width: "200px", height: "50px", color: "black", fontWeight: "bold"}}
+              action={() => nav.push("concert")}
+            >
+              Concerts
+            </PrimaryButton>
           </div>
       </div>
     </>

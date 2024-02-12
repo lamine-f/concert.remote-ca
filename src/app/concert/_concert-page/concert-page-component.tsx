@@ -6,7 +6,7 @@ import Image from "next/image";
 import SecondaryButton from "@/app/_shared-components/secondary-button/secondary-button-component";
 import {Concert} from "@/app/concert/_components/concerts-cards/concert-component";
 import PrimaryButton from "@/app/_shared-components/primary-button/primary-button-component";
-import {checkIfConcertAlreadySaved, saveConcertToLocalStorage} from "@/app/concert/_hooks/useLocalStorage";
+import {checkIfConcertAlreadySaved} from "@/app/concert/_hooks/useLocalStorage";
 import {useSavedConcertContext} from "@/app/concert/_hooks/useSavedConcert";
 
 export default function ConcertPage () {
@@ -47,7 +47,6 @@ export default function ConcertPage () {
                   children={"Enregistrer"}
               />
           }
-
       </div>
     </div>
   )
@@ -61,20 +60,10 @@ function FirstPage ({concert}:{concert: Concert}) {
   useEffect(() => {
     const element: HTMLElement | null = container.current
     if (element) {
-      console.log(element)
-
       setTimeout( () => {
         element.scrollIntoView({behavior: 'smooth'})
       }, 700 )
-
-      //
-      // setTimeout( () => {
-      //   element.scrollIntoView({block: 'start'})
-      // }, 1000 )
-
     }
-
-
   }, []);
 
   return (
@@ -102,15 +91,7 @@ function SecondPage ({concert}:{concert: Concert}) {
       setTimeout( () => {
         element.scrollIntoView({behavior: 'smooth'})
       }, 500 )
-
-      //
-      // setTimeout( () => {
-      //   element.scrollIntoView({block: 'start'})
-      // }, 1000 )
-
     }
-
-
   }, []);
 
   return (
