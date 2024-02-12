@@ -3,28 +3,50 @@ import React, {useEffect, useState} from "react";
 import {apiInstance} from "@/app/api/_api/instances";
 import styles from "./saved-concert-component.module.css"
 import Image from "next/image";
+import {CONCERTS} from "@/app/api/bd";
 
 
 
 export function SavedConcertsCard (): React.ReactNode {
-  const [response, error, loading, axiosFetch] = useAxios();
+  // const [response, error, loading, axiosFetch] = useAxios();
   const [savedConcerts, setSavedConcerts] = useState<Concert []>([]);
 
-  useEffect(() => {
-    axiosFetch({
-      axiosInstance: apiInstance,
-      url: "get-saved-concerts",
-      method: "get",
-      requestConfig: []
-    })
-  }, []);
+
+  const getConcertsFromLocalStorage = (): Concert[] => {
+    const getConcertFromId = (id: number): Concert => {
+      const concert = CONCERTS.filter( concert => concert.id === id );
+      return concert[0]
+    }
+
+    let str: string | null =  window.localStorage.getItem("saved-concerts");
+    const data = [JSON.parse( str ? str : '[]' )];
+    const concertIds: number[] = data.length === 1 ? data[0] : [];
+    return concertIds.map( concertId => getConcertFromId(concertId) ).filter( concert => concert !== null );
+  }
+
+
+
+  // useEffect(() => {
+  //   axiosFetch({
+  //     axiosInstance: apiInstance,
+  //     url: "get-saved-concerts",
+  //     method: "get",
+  //     requestConfig: []
+  //   })
+  // }, []);
+
+  // useEffect(() => {
+  //   let data: Concert[] = response;
+  //   if ( data !== null ) {
+  //     console.log(data)
+  //     setSavedConcerts(data)
+  //   }
+  // }, [response]);
 
   useEffect(() => {
-    let data: Concert[] = response;
-    if ( data !== null ) {
-      setSavedConcerts(data)
-    }
-  }, [response]);
+    console.log(  )
+    setSavedConcerts( getConcertsFromLocalStorage() )
+  }, []);
 
 
   return (
