@@ -33,22 +33,22 @@ export default function ConcertPage () {
           <FirstPage concert={currentConcert}/>
           <SecondPage concert={currentConcert}/>
       </div>
-        <div className={styles.buttonsContainer} >
-            <SecondaryButton
-                action={() => cancel()}
-                children={"Cancel"}
-            />
-            {!checkIfConcertAlreadySaved(currentConcert.id) &&
-                <PrimaryButton
-                    action={() => {
-                      saveConcert(currentConcert)
-                      cancel()
-                    } }
-                    children={"Enregistrer"}
-                />
-            }
+      <div className={styles.buttonsContainer} >
+          <SecondaryButton
+              action={() => cancel()}
+              children={"Cancel"}
+          />
+          {!checkIfConcertAlreadySaved(currentConcert.id) &&
+              <PrimaryButton
+                  action={() => {
+                    saveConcert(currentConcert)
+                    cancel()
+                  } }
+                  children={"Enregistrer"}
+              />
+          }
 
-        </div>
+      </div>
     </div>
   )
 }
