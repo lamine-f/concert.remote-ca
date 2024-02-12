@@ -1,16 +1,25 @@
+"use client"
+
 import {CONCERTS} from "@/app/api/bd";
 
 const key = 'saved-concerts'
+
+
 export const getConcertsFromLocalStorage = (): Concert[] => {
   const getConcertFromId = (id: number): Concert => {
     const concert = CONCERTS.filter( concert => concert.id === id );
     return concert[0]
   }
 
-  let str: string | null =  window.localStorage.getItem(key);
-  const data = [JSON.parse( str ? str : '[]' )];
-  const concertIds: number[] = data.length === 1 ? data[0] : [];
-  return concertIds.map( concertId => getConcertFromId(concertId) ).filter( concert => concert !== null );
+  if (typeof window !== "undefined") {
+    // browser code
+    let str: string | null =  window.localStorage.getItem(key);
+    const data = [JSON.parse( str ? str : '[]' )];
+    const concertIds: number[] = data.length === 1 ? data[0] : [];
+    return concertIds.map( concertId => getConcertFromId(concertId) ).filter( concert => concert !== null );
+  }
+
+  return []
 }
 
 
@@ -24,7 +33,10 @@ export const saveConcertToLocalStorage = (concert: Concert) => {
   if (!checkIfConcertAlreadySaved(newId)){
     concertsId.push(newId)
   }
-  window.localStorage.setItem( key , JSON.stringify(concertsId) );
+
+  if (typeof window !== "undefined") {
+    window.localStorage.setItem( key , JSON.stringify(concertsId) );
+  }
 }
 
 export const removeConcertToLocalStorage = (concert: Concert) => {
@@ -33,5 +45,8 @@ export const removeConcertToLocalStorage = (concert: Concert) => {
   if (checkIfConcertAlreadySaved(id)){
     concertsId = concertsId.filter(concertId => concertId !== id )
   }
-  window.localStorage.setItem( key , JSON.stringify(concertsId) );
+
+  if (typeof window !== "undefined") {
+    window.localStorage.setItem( key , JSON.stringify(concertsId) );
+  }
 }

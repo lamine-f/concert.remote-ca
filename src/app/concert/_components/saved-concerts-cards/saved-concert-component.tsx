@@ -1,14 +1,8 @@
-import useAxios from "@/app/concert/_hooks/useAxios";
+"use client"
 import React, {useEffect, useState} from "react";
-import {apiInstance} from "@/app/api/_api/instances";
 import styles from "./saved-concert-component.module.css"
 import Image from "next/image";
-import {CONCERTS} from "@/app/api/bd";
-import {getConcertsFromLocalStorage, removeConcertToLocalStorage} from "@/app/concert/_hooks/useLocalStorage";
-import {handleAction} from "next/dist/server/app-render/action-handler";
 import {useSavedConcertContext} from "@/app/concert/_hooks/useSavedConcert";
-
-
 
 export function SavedConcertsCard (): React.ReactNode {
   const [savedConcerts, setSavedConcerts] = useState<Concert []>([]);

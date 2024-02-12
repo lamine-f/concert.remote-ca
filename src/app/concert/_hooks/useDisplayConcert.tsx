@@ -1,6 +1,5 @@
-// BurgerContext.js
+"use client"
 import React, { createContext, useContext, useState } from 'react';
-import {Rapper} from "@/app/concert/page";
 
 const DisplayContext = createContext<
   {

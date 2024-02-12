@@ -1,3 +1,5 @@
+"use client"
+
 import {useDisplayConcert} from "@/app/concert/_hooks/useDisplayConcert";
 import React, {useEffect, useRef, useState} from "react";
 import styles from "./concert-page-component.module.css";
