@@ -1,5 +1,5 @@
 import {useDisplayConcert} from "@/app/concert/_hooks/useDisplayConcert";
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import styles from "./concert-page-component.module.css";
 
 import infosConcert from "./concert-infos.module.css";
@@ -19,14 +19,17 @@ export default function ConcertPage () {
   }
 
   useEffect(() => {
-    if (concert)
+    if (concert) {
       setCurrentConcert(concert);
+    }
   }, [concert]);
+
+
 
   return (
     (currentConcert && active ) &&
     <div className={styles.wrapper} >
-      <div className={styles.container}>
+      <div  className={styles.container}>
           <FirstPage concert={currentConcert}/>
           <SecondPage concert={currentConcert}/>
       </div>
@@ -46,8 +49,30 @@ export default function ConcertPage () {
 
 
 function FirstPage ({concert}:{concert: Concert}) {
+
+  const container = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const element: HTMLElement | null = container.current
+    if (element) {
+      console.log(element)
+
+      setTimeout( () => {
+        element.scrollIntoView({behavior: 'smooth'})
+      }, 700 )
+
+      //
+      // setTimeout( () => {
+      //   element.scrollIntoView({block: 'start'})
+      // }, 1000 )
+
+    }
+
+
+  }, []);
+
   return (
-    <section className={styles.firstSection}>
+    <section ref={container} className={styles.firstSection}>
       <div className={styles.backgoundMask} />
       <h2 className={styles.artistName} >{concert.artist.name}</h2>
       <div className={styles.concertCardContainer} >
@@ -62,31 +87,57 @@ function FirstPage ({concert}:{concert: Concert}) {
 }
 
 function SecondPage ({concert}:{concert: Concert}) {
+
+  const container = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const element: HTMLElement | null = container.current
+    if (element) {
+      setTimeout( () => {
+        element.scrollIntoView({behavior: 'smooth'})
+      }, 500 )
+
+      //
+      // setTimeout( () => {
+      //   element.scrollIntoView({block: 'start'})
+      // }, 1000 )
+
+    }
+
+
+  }, []);
+
   return (
-    <section className={infosConcert.wrapper}>
+    <section ref={container} className={infosConcert.wrapper}>
       <div className={infosConcert.backgoundMask} />
       <div className={infosConcert.container} >
 
-        <div className={infosConcert.concertDateContainer} >
-          <h2 className={infosConcert.concertDate} >{concert.date}</h2>
-        </div>
+        <div className={infosConcert.containers}>
 
-        <div className={infosConcert.infosContainer} >
-          <div className={infosConcert.infosSubContainer}>
-            <div className={infosConcert.label} >Nom de l'evenement</div>
-            <p className={infosConcert.infosBody}> {concert.name} </p>
+
+          <div className={infosConcert.concertDateContainer} >
+            <h2 className={infosConcert.concertDate} >{concert.date}</h2>
           </div>
 
-          <div className={infosConcert.infosSubContainer}>
-            <div className={infosConcert.label} >Type de musique</div>
-            <p className={infosConcert.infosBody}> {concert.types.map(type => type.name).join(', ')} </p>
+          <div className={infosConcert.infosContainer} >
+            <div className={infosConcert.infosSubContainer}>
+              <div className={infosConcert.label} >Nom de l'evenement</div>
+              <p className={infosConcert.infosBody}> {concert.name} </p>
+            </div>
+
+            <div className={infosConcert.infosSubContainer}>
+              <div className={infosConcert.label} >Type de musique</div>
+              <p className={infosConcert.infosBody}> {concert.types.map(type => type.name).join(', ')} </p>
+            </div>
           </div>
+
+          <div style={{width: "100%"}} className={infosConcert.infosSubContainer} >
+            <div className={infosConcert.label} >Informations:</div>
+            <p className={infosConcert.infosSupBody}> {concert.description} </p>
+          </div>
+
         </div>
 
-        <div className={infosConcert.infosSubContainer} >
-          <div className={infosConcert.label} >Informations:</div>
-          <p className={infosConcert.infosSupBody}> {concert.description} </p>
-        </div>
 
       </div>
       <Image className={styles.image} width={400} height={400} src={concert.artist.picture[2]} alt={"background image"}/>
