@@ -7,7 +7,6 @@ import React, {CSSProperties} from "react";
 import Link from "next/link";
 
 
-
 function Card ({style, color, children}:{
   style:CSSProperties,
   color?: string,

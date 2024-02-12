@@ -1,10 +1,10 @@
 "use client"
 import React, {useEffect} from "react";
 import styles from "./concert.module.css"
-import {ConcertsCard} from "@/app/concert/_components/concerts-card/concert-component";
-import {SavedConcertsCard} from "@/app/concert/_components/saved-concerts-card/saved-concert-component";
-import {DisplayProvider, useDisplay} from "@/app/concert/_hooks/useDisplay";
-import ConcertPage from "@/app/concert/_components/concert-page/concert-page-component";
+import {ConcertsCard} from "@/app/concert/_components/concerts-cards/concert-component";
+import {SavedConcertsCard} from "@/app/concert/_components/saved-concerts-cards/saved-concert-component";
+import {DisplayProvider, useDisplayConcert} from "@/app/concert/_hooks/useDisplayConcert";
+import ConcertPage from "@/app/concert/_concert-page/concert-page-component";
 
 export type Rapper = {
   id: number,

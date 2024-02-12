@@ -18,7 +18,10 @@ export default function NavBar () {
       <div className={styles.container}>
       {
         isMobile ?
-          <BurgerMenu/>
+          <BurgerMenus children={[
+            <BurgerMenu handleToggle={() => {}} url={"/"} >Acceuil</BurgerMenu>,
+            <BurgerMenu handleToggle={() => {}} url={"a-propos"}>A propos</BurgerMenu>
+          ]} />
           :
             <Buttons
             >
@@ -58,7 +61,7 @@ function Button ({active, children, href}:{
   )
 }
 
-export const BurgerMenu = () => {
+const BurgerMenus = ({children}:{children: React.ReactNode[]}) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -75,15 +78,19 @@ export const BurgerMenu = () => {
         <div className={styles.menu}>
 
           <div className={styles.menuItemContainer} >
-            <Link className={styles.menuItem} onClick={() => handleToggle()} href={"/"}>Acceuil</Link>
-          </div>
-
-          <div className={styles.menuItemContainer} >
-            <Link className={styles.menuItem} onClick={() => handleToggle()} href={"concerts-card"}>Concert</Link>
+            {children.map( (child: any, id) => React.cloneElement(child, {...child, handleToggle}) )}
           </div>
 
         </div>
       )}
     </div>
   );
+};
+
+
+
+const BurgerMenu = ({handleToggle, children, url}: {handleToggle: () => void, children: React.ReactNode, url: string}) => {
+  return (
+    <Link className={styles.menuItem} onClick={() => handleToggle()} href={url}>{children}</Link>
+  )
 };

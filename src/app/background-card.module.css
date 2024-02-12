@@ -2,7 +2,7 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    padding: 150px;
+    padding: 100px;
     z-index: 5;
     display: flex;
     justify-content: space-between;
@@ -26,4 +26,39 @@
 
 .cardsContainer {
     display: flex;
+
+    animation: bounce 2s ease-in-out infinite ;
+
 }
+
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+
+    .leftCardContainer, .rightCardContainer {
+        transform: scale(0.5);
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+}
+
