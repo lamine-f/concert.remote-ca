@@ -47,8 +47,10 @@ export function SavedConcert ({data, deleteAction}: {data: Concert, deleteAction
       <div className={styles.backgroundImageMask}/>
 
       <div className={styles.savedConcertsC} >
-        <h2 className={styles.artistName}>{data.artist.name}</h2>
+        <h2 className={styles.concertDate}>{data.date}</h2>
+        <h3 className={styles.concertName}>{data.name}</h3>
       </div>
+
 
       <div className={styles.trash} onClick={() => deleteAction(data)} > Supprimer </div>
 

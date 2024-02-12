@@ -1,21 +1,18 @@
 import {useDisplayConcert} from "@/app/concert/_hooks/useDisplayConcert";
 import React, {useEffect, useRef, useState} from "react";
 import styles from "./concert-page-component.module.css";
-
 import infosConcert from "./concert-infos.module.css";
 import Image from "next/image";
 import SecondaryButton from "@/app/_shared-components/secondary-button/secondary-button-component";
 import {Concert} from "@/app/concert/_components/concerts-cards/concert-component";
-import {Rapper} from "@/app/concert/page";
 import PrimaryButton from "@/app/_shared-components/primary-button/primary-button-component";
 import {checkIfConcertAlreadySaved, saveConcertToLocalStorage} from "@/app/concert/_hooks/useLocalStorage";
 import {useSavedConcertContext} from "@/app/concert/_hooks/useSavedConcert";
 
 export default function ConcertPage () {
-
   const {concert, setConcert, active, toggleDisplayContext} = useDisplayConcert()
   const [currentConcert, setCurrentConcert] = useState<Concert>();
-  const { concerts, saveConcert } = useSavedConcertContext()
+  const { saveConcert } = useSavedConcertContext()
 
   const cancel = () => {
     toggleDisplayContext?.();
@@ -29,7 +26,6 @@ export default function ConcertPage () {
   }, [concert]);
 
 
-
   return (
     (currentConcert && active ) &&
     <div className={styles.wrapper} >
@@ -37,8 +33,6 @@ export default function ConcertPage () {
           <FirstPage concert={currentConcert}/>
           <SecondPage concert={currentConcert}/>
       </div>
-
-
         <div className={styles.buttonsContainer} >
             <SecondaryButton
                 action={() => cancel()}
@@ -55,11 +49,9 @@ export default function ConcertPage () {
             }
 
         </div>
-
     </div>
   )
 }
-
 
 
 function FirstPage ({concert}:{concert: Concert}) {
