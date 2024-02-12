@@ -4,8 +4,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 5;
-    /*backdrop-filter: blur(12px);*/
+    z-index: 6;
     background: var(--app-background-color);
     display: flex;
     justify-content: center;
@@ -81,15 +80,6 @@
 
 
 
-
-/**--- SECTION 2 */
-
-.secondSection {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    scroll-snap-align: start;
-}
 
 @keyframes display {
     0% {
